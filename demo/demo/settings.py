@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
     'django.contrib.admin', # the admin dashboard stuff
     'django.contrib.auth', # authentification system, no need to implement auth
     'django.contrib.contenttypes', # framework for content types
@@ -105,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'PDT'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 
